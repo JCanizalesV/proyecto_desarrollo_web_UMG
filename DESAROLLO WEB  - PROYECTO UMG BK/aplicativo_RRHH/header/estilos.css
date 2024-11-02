@@ -1,0 +1,66 @@
+/* Estilos personalizados para el menú lateral */
+.dashboard-nav {
+    width: 250px;
+    background-color: #1f618d;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+.dashboard-nav .brand-logo {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.dashboard-nav .dashboard-nav-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.dashboard-nav .dashboard-nav-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.dashboard-nav .dashboard-nav-item:hover {
+    background-color: #1f618d;
+}
+
+/* Responsividad: Menú colapsable en pantallas pequeñas */
+@media (max-width: 768px) {
+    .dashboard-nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+}
+
+    /* Margen derecho para los iconos del menú */
+    .dashboard-nav-item i {
+        margin-right: 10px; /* Ajusta el valor según prefieras */
+    }
+
+    .dashboard-nav header {
+        text-align: center; /* Centra el texto en el contenedor del header */
+        margin-bottom: 20px; /* Espacio entre el título y el logo, ajusta según prefieras */
+    }
+    
+    .dashboard-title {
+        margin: 0; /* Elimina el margen por defecto del h3 */
+        font-size: 1.5rem; /* Ajusta el tamaño del texto según tus preferencias */
+        color: white; /* Asegúrate de que el color sea visible */
+    }
+    

@@ -1,0 +1,116 @@
+    /* Contenedor principal de la tabla */
+    .table-container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1400px;
+    }
+
+    /* Estilos de la tabla */
+    #tabla_cc {
+        border-collapse: separate;
+        border-spacing: 0 6px; /* Espacio entre filas */
+        color: #333;
+        font-size: 12px;
+    }
+
+    #tabla_cc thead th {
+        text-align: center; /* Centrar títulos */
+        font-weight: 600;
+        background-color: #efefef;
+        color: #333;
+        border: none;
+        padding: 6px 10px;
+    }
+
+    #tabla_cc tbody td {
+        text-align: center; /* Centrar contenido */
+        background-color: #ffffff;
+        border: none;
+        padding: 6px 10px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    #tabla_cc tbody tr {
+        border-radius: 8px;
+    }
+
+    #tabla_cc tbody tr:hover td {
+        background-color: #f9f9f9;
+    }
+
+    /* Botón de edición */
+    .btn-outline-primary {
+        color: #545527;
+        border-color: #274c55;
+        padding: 2px 6px;
+        font-size: 12px;
+    }
+
+    .btn-outline-primary:hover {
+        background-color: #274c55;
+        color: white;
+    }
+
+
+    /* Estilos para los labels */
+.modal-body label {
+    font-weight: bold;          /* Hace que el texto sea más grueso */
+    color: #333;                /* Cambia el color del texto */
+    font-size: 12px;            /* Cambia el tamaño de la fuente */
+    margin-bottom: 3px;         /* Espacio debajo del label */
+}
+
+/* Estilos para los inputs */
+.modal-body .form-control {
+    background-color: #f7f7f7;  /* Color de fondo */
+    border: 1px solid #ccc;     /* Borde */
+    border-radius: 5px;         /* Borde redondeado */
+    padding: 4px;              /* Espaciado interno */
+    font-size: 14px;            /* Tamaño de la fuente */
+    color: #555;                /* Color del texto */
+}
+
+/* Cambiar el borde del input cuando está en foco */
+.modal-body .form-control:focus {
+    border-color: #007bff;      /* Color del borde cuando está enfocado */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al hacer foco */
+    outline: none;              /* Elimina el borde por defecto */
+}
+
+/* Estilos para el encabezado de la tabla */
+.table thead th {
+    font-weight: bold;
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    border: none; /* Elimina los bordes del encabezado */
+}
+
+/* Estilos para el cuerpo de la tabla con bordes internos */
+.table tbody td {
+    font-size: 13px;
+    color: #555;
+    background-color: #f7f7f7;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Aplica un borde derecho a las celdas internas de cada fila excepto la última */
+.table tbody td:not(:last-child) {
+    border-right: 1px solid #e0e0e0; /* Borde derecho solo en las celdas internas */
+}
+
+/* Ajuste de tamaño de las columnas */
+.table .col-parentesco { width: 10%; }
+.table .col-nombre { width: 30%; }
+.table .col-edad { width: 7%; }
+.table .col-telefono { width: 8%; }
+.table .col-trabajo { width: 45%; }
+
+/* Centrar el título de la tabla */
+.modal-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}

@@ -1,0 +1,52 @@
+    /* Contenedor principal de la tabla */
+    .table-container {
+        margin: 0 auto;
+        width: 80%;
+        max-width: 1200px;
+    }
+
+    /* Estilos de la tabla */
+    #tabla_cc {
+        border-collapse: separate;
+        border-spacing: 0 6px; /* Espacio entre filas */
+        color: #333;
+        font-size: 15px;
+    }
+
+    #tabla_cc thead th {
+        text-align: center; /* Centrar títulos */
+        font-weight: 600;
+        background-color: #f4f6f8;
+        color: #333;
+        border: none;
+        padding: 6px 10px;
+    }
+
+    #tabla_cc tbody td {
+        text-align: center; /* Centrar contenido */
+        background-color: #ffffff;
+        border: none;
+        padding: 6px 10px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    #tabla_cc tbody tr {
+        border-radius: 8px;
+    }
+
+    #tabla_cc tbody tr:hover td {
+        background-color: #f9f9f9;
+    }
+
+    /* Botón de edición */
+    .btn-outline-primary {
+        color: #545527;
+        border-color: #274c55;
+        padding: 2px 6px;
+        font-size: 12px;
+    }
+
+    .btn-outline-primary:hover {
+        background-color: #274c55;
+        color: white;
+    }

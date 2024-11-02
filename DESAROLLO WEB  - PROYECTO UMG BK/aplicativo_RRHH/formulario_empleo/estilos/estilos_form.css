@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+body{
+    background-color: #f3f3f3;
+}
+
+h1 {
+    text-align: center;
+    font-family: arial;
+    font-size: 30px;
+}
+
+/* Contenedor de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 columnas */
+    gap: 35px 30px; /* Espacio entre columnas y filas (mayor entre filas) */
+    margin-bottom: 20px;
+}
+
+/* Ajuste de elementos individuales dentro de la cuadrícula */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* Espacio entre etiqueta y entrada */
+    margin-bottom: 0px; /* Espacio adicional para cada elemento */
+}
+
+/* Elemento que ocupa toda la fila */
+.grid-item-full {
+    grid-column: span 8; /* Ocupa las 8 columnas */
+}
+
+.seccion {
+    max-width: 1200px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Apilar verticalmente */
+}
+.titulo-seccion {
+    text-align: left;
+    color: #000000;
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 10px; /* Ajuste para subir el título */
+    margin-bottom: 15px;
+    padding-top: 0; /* Asegúrate de que el padding superior sea cero */
+    padding-bottom: 15px;
+}
+
+.titulo-seccion2 {
+    text-align: left;
+    color: #000000;
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px; /* Ajuste para subir el título */
+    margin-bottom: 15px;
+    padding-top: 0; /* Asegúrate de que el padding superior sea cero */
+    padding-bottom: 15px;
+}
+
+
+
+
+/* Label con fuente más fina y color negro suave */
+.label {
+    display: block;
+    font-weight: 400; /* Fuente más ligera */
+    font-family: 'Roboto', sans-serif;
+    color: #000000; /* Negro suave */
+    font-size: 16px; /* Tamaño ajustado */
+}
+
+.input-campo {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b2b2b2;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #545b7d;
+    font-size: 14px;
+    background-color: #ffffff;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+/* Contenedor para alinear los botones en línea */
+.botones-container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los botones */
+    gap: 20px; /* Espacio entre los botones */
+    margin-top: 20px; /* Espacio superior opcional */
+}
+
+/* Ajuste del ancho de los botones */
+.btn-siguiente {
+    width: 48%; /* Cada botón ocupa aproximadamente la mitad del espacio */
+}
+
+
+/* Botón Siguiente con tamaño más ajustado */
+.btn-siguiente {
+    display: block;
+    width: 100%; /* Reduce el ancho al 50% */
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: auto; /* Centra el botón dentro del contenedor */
+    margin-right: auto;
+    background-color: #2d7d46;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-siguiente:hover {
+    background-color: #256537;
+}
+
+.botones-container {
+    margin-top: auto; /* Empuja los botones hacia abajo */
+}
+
+#btnEnviar:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+
+/* Media Queries para Responsividad */
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr); /* Cambia a 4 columnas en pantallas medianas */
+    }
+    .grid-item-full {
+        grid-column: span 4; /* Ajusta los elementos completos */
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas en pantallas pequeñas */
+    }
+    .grid-item-full {
+        grid-column: span 2; /* Ajusta los elementos completos */
+    }
+}
+
+@media (max-width: 576px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Cambia a 1 columna en pantallas muy pequeñas */
+    }
+    .grid-item-full {
+        grid-column: span 1; /* Ajusta los elementos completos */
+    }
+}
+
